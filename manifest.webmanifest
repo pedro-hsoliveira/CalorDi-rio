@@ -5,6 +5,13 @@
   "display": "standalone",
   "background_color": "#f4f7f5",
   "theme_color": "#176b52",
-  "description": "Diário alimentar com registro por gramas e acompanhamento de calorias e macronutrientes.",
-  "icons": [{"src":"icon.svg","sizes":"any","type":"image/svg+xml","purpose":"any maskable"}]
+  "description": "Diário alimentar com registro por gramas, banco brasileiro de alimentos e macronutrientes.",
+  "icons": [
+    {
+      "src": "icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
 }

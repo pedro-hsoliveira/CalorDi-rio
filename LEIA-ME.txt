@@ -1,24 +1,24 @@
-# CalorDiário — primeira versão
+CalorDiário v2 — Banco nutricional ampliado
 
-## O que funciona
-- Painel diário com total de calorias e meta editável.
-- Totais de proteínas, carboidratos e gorduras.
-- Registro manual por alimento e peso em gramas.
-- Cálculo proporcional a partir dos valores por 100 g.
-- Cadastro e edição de alimentos.
-- Histórico dos últimos sete dias.
-- Dados salvos localmente no navegador do aparelho.
-- Estrutura PWA para instalação no Android e cache offline após a primeira visita.
+Esta versão inclui 99 alimentos e preparações brasileiras, com valores por 100 g de parte comestível, categorias, nomes alternativos, indicação de preparo e fonte/código quando disponível. O catálogo prioriza dados da TACO 4ª edição revisada e ampliada (NEPA/Unicamp, 2011), que permite reprodução desde que a fonte seja citada.
 
-## Como abrir e instalar no Android
-1. Publique esta pasta em um serviço de hospedagem estática com HTTPS (por exemplo, GitHub Pages, Netlify ou Vercel).
-2. Abra o endereço publicado no Chrome do Android.
-3. No menu do Chrome, escolha **Instalar app** ou **Adicionar à tela inicial**.
+O conjunto inclui cereais e acompanhamentos, raízes e tubérculos, leguminosas, carnes, ovos, peixes, laticínios, frutas, hortaliças, ingredientes e preparações prontas que podem aparecer em restaurantes universitários. A TACO informa a composição por 100 g e contempla preparações brasileiras; consulte a fonte indicada no item.
 
-O service worker e a instalação PWA não funcionam corretamente abrindo o arquivo index.html diretamente. Para usar a versão PWA, é necessário hospedá-la em HTTPS ou localhost.
+Cuidados de uso:
+- Escolha a versão correspondente ao estado em que pesou o alimento: cru, cozido, grelhado, assado etc.
+- Preparações de restaurante variam conforme receita, quantidade de óleo, cortes, molhos e proporções. Os valores da tabela são referências, não uma medição exata do prato servido.
+- Quando a tabela não analisa determinado nutriente, o catálogo não deve ser interpretado como uma medição laboratorial completa daquele alimento.
+- Alimentos de marcas específicas devem ser cadastrados a partir do rótulo.
+- Para receitas próprias, cadastre a receita ou os ingredientes individualmente, conforme a versão atual do app permitir.
 
-## Importante sobre os dados
-Os registros ficam no armazenamento local do navegador (localStorage). Eles não são sincronizados entre aparelhos e podem ser apagados se os dados do navegador forem limpos. Ainda não há login nem backup em nuvem.
+Fontes e licenças:
+- TACO, 4ª edição revisada e ampliada, NEPA/Unicamp (2011): https://nepa.unicamp.br/wp-content/uploads/sites/27/2023/10/taco_4_edicao_ampliada_e_revisada.pdf
+- TBCA/USP foi consultada para conferência metodológica, mas seus dados não foram incluídos no catálogo distribuído, respeitando as restrições de reprodução publicadas pela própria base.
 
-## Precisão nutricional
-Os alimentos iniciais têm valores aproximados por 100 g, para facilitar o teste. Confira e edite conforme a preparação, marca e fonte nutricional que você utiliza. Para maior precisão, prefira informar alimentos cozidos quando o peso foi medido depois do preparo.
+Migração e preservação:
+- Ao atualizar de v1 para v2, o app remove os 12 alimentos de demonstração sem alteração e acrescenta o catálogo ampliado.
+- Refeições já registradas e alimentos personalizados permanecem no armazenamento local.
+- Alimentos da demonstração que você já havia editado são preservados como itens personalizados migrados.
+- Os dados continuam locais no navegador, sem sincronização ou backup em nuvem nesta versão.
+
+Instalação Android: hospede o conteúdo da pasta em HTTPS e abra no Chrome; escolha Instalar aplicativo / Adicionar à tela inicial.
